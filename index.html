@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Satyam Arya">
+  <meta property="og:image" content="./assets/project.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+
+  <title>Satyam Arya</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loader.css">
+
+  <!-- CDN's -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+  <!--Loader-->
+  <div class="loaderDiv">
+    <div class="loader"></div>
+    <p>Loading page</p>
+  </div>
+  <!--Toaster-->
+  <div class="toaster"></div>
+  <!--Div for background-->
+  <div class="bg-div"></div>
+
+  <!-----------------------
+            HEADER
+    ------------------------->
+
+  <header class="header" id="header">
+    <div class="logo img"><img class="" src="assets/me.png" alt="logo"></div>
+    <p class="logo initials" tabindex="1" href=""></p>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li><a class="navbar-link active" name="home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
+        </li>
+        <li><a class="navbar-link" name="about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a></li>
+        <li><a class="navbar-link" name="skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
+        </li>
+        <li><a class="navbar-link" name="projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
+        </li>
+        <li><a class="navbar-link" name="education" onclick="scrollToSection(this),toggleNav()"
+            tabindex="8">Education</a></li>
+        <li><a class="navbar-link" name="certificates" onclick="scrollToSection(this),toggleNav()"
+            tabindex="9">Certifications</a></li>
+      </ul><a class="contactBtn button" name="getInTouch" tabindex="10" href="https://www.linkedin.com/in/satyam-arya-101764205/"
+        target="_blank">Contact</a><ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon"
+        onclick="toggleNav()"></ion-icon>
+    </div><ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  </header>
+
+  <!-----------------------
+          HOME SECTION
+    ------------------------->
+
+  <section class="section home-section" id="home" tabindex="42">
+    <div>
+      <h1>Hey, I'm <span class="name">Satyam Arya</span></h1>
+      <p class="aboutShort">MERN Stack Developer & Cloud Enthusiast</p>
+      <button class="about-me-btn button" name="about" onclick="scrollToSection(this)" tabindex="2">About Me<ion-icon
+          name="chevron-forward-outline"></ion-icon></button>
+    </div>
+    <div class="">
+    <div class="imgDiv">
+      <img src="./assets/me.png" class="profile-image">
+    </div>
+    </div>
+  </section>
+
+  <!-----------------------
+          ABOUT SECTION
+    ------------------------->
+
+  <section id="about" class="section about-section" tabindex="11">
+    <div class="about-ill"><img src="./assets/about.png" alt="Memoji"></div>
+    <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <h2 class="name">About me</h2>
+      <br>
+      <p class="aboutLong">I'm a student pursuing B.Tech in CSE with specialisation in Cloud Computing at SRM IST Delhi-NCR Campus. I'm MERN stack developer and cloud enthusiast. I love connecting with people and having a network of like-minded people. I have a good command on C/C++. I am a quick learner and can adapt to changes real quick. My short term goal as of now is to master Web Development and complete my AWS Certified Solution Architect Associate certification. I'm a team player and I had also taken part in several Hackathons. I'm happy you stopped by! See what I can do for you,check out my portfolio and get in touch with me.</p>
+      <br><a class="button" href="assets/Resume.pdf" target="_blank" tabindex="12">Resume<ion-icon
+          name="document-outline"></ion-icon></a>
+    </div>
+    <ul class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+      <li><a href="https://www.linkedin.com/in/satyam-arya-101764205/" target="_blank" aria-label="linkedin" class="linkedin" tabindex="13"><i
+            class="fab fa-linkedin-in"></i></a></li>
+      <li><a href="https://github.com/satyam19arya" target="_blank" aria-label="github" class="github" tabindex="14"><i
+            class="fab fa-github"></i></a></li>
+      <li><a href="https://www.instagram.com/satyam19arya/" target="_blank" aria-label="instagram" class="instagram" tabindex="15"><i
+            class="fab fa-instagram"></i></a></li>
+      <li><a href="https://twitter.com/SatyamA93109394" target="_blank" aria-label="twitter" class="twitter" tabindex="16"><i
+            class="fab fa-twitter"></i></a></li>
+    </ul>
+  </section>
+
+  <!-----------------------
+        SKILLS SECTION
+    ------------------------->
+
+  <section class="section skill-section" id="skills" tabindex="17">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">My Skills</h1>
+      <div class="skill-container">
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 1">
+          <p>AWS</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 1">
+          <p>Azure</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 2">
+          <p>HTML</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>CSS/Sass</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>Javascript</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>Bootstrap</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>Wordpress</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>React/Redux</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>Git/Github</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>C/C++</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>Nodejs/Expressjs</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>Insomnia</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>MySQL</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>MongoDB</p>
+        </div>
+        <div class="major"><img src="./assets/skill.png" alt="Skill image 3">
+          <p>Strapi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------
+        PROJECT SECTION
+    ------------------------->
+  <section class="section main project-section" id="projects" tabindex="18">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">My recent work<p class="sectionDesc">
+            Here are the few projects I've worked on😊</p>
+        </h1><img class="ProjectHeaderImage" src="./assets/project-head.png" alt="Project header image">
+      </div>
+      <div class="project card-container">
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>MyBlogs (Personal Blog website)</h6>
+          <p class="techstack"><span> Techstack </span> Wordpress, AWS EC2, ALB, Route53, ACM</p>
+          <p class="library"><span> Description </span> A personal blog website made using wordpress where I write blogs related to cloud, development, computer science and more..</p>
+          <div class="options">
+            <a class="viewElem" href="https://myblogs.satyam-arya.click/" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+          </div>
+        </div>
+        
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Online food delivery app</h6>
+          <p class="techstack"><span> Techstack </span> MERN, Cloudinary, Strapi, Stripe, DigitalOcean</p>
+          <p class="library"><span> Description </span> User can find food according to categories, search for their favourite item, add items to cart & make a successful payment.</p>
+          <div class="options">
+            <a class="viewElem" href="https://myorder.satyam-arya.click/" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com/satyam19arya/ecommerce_frontend" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a class="githubElem" href="https://github.com/satyam19arya/ecommerce_backend" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Social Media Application</h6>
+          <p class="techstack"><span> Techstack </span> MERN, Cloudinary, DigitalOcean</p>
+          <p class="library"><span> Description </span> User authentication using JWT token, create & update account with pic/name/bio, create post with text/image, user can like the post/follow and unfollow the users</p>
+          <div class="options">
+            <a class="viewElem" href="" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            <a class="githubElem" href="https://github.com" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Face Recognition Using Amazon Rekognition</h6>
+          <p class="techstack"><span> Techstack </span> Amazon Rekognition, DynamoDB, S3 bucket, Lambda functions, IAM roles</p>
+          <p class="library"><span> Description </span> This project helps in recognizing image of a famous person given by the user.</p>
+          <div class="options">
+            <a class="viewElem" href="" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com/satyam19arya/Face-Recognition-Using-Amazon-Rekognition" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Voice Change App with AWS S3, Transcribe, Polly & DynamoDB</h6>
+          <p class="techstack"><span> Techstack </span> AWS S3, Transcribe, Polly, Lambda functions, DynamoDB, CloudWatch, IAM roles</p>
+          <p class="library"><span> Description </span> This project helps in changing the voice of a person & it's serverless app</p>
+          <div class="options">
+            <a class="viewElem" href="" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Static Food Website</h6>
+          <p class="techstack"><span> Techstack </span> HTML, CSS, JS, Bootstrap, AWS </p>
+          <p class="library"><span> Description </span> Created a static food website & deployed on AWS S3 Bucket with domain name (maintained by Route53), ACM for a valid SSL/TLS certificate & Amazon CloudFront distribution to serve website globally.</p>
+          <div class="options">
+            <a class="viewElem" href="https://fooduno.satyam-arya.click/" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            <a class="githubElem" href="https://github.com/satyam19arya/food-website" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Discussion forum</h6>
+          <p class="techstack"><span> Techstack </span> Wordpress, AWS EC2, ALB, Route53, ACM</p>
+          <p class="library"><span> Description </span> Created a discussion forum where user can discuss, post questions & answers to other users.</p>
+          <div class="options">
+            <a class="viewElem" href="" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image">
+          </div>
+          <br>
+          <h6>Search Engine using AWS Kendra</h6>
+          <p class="techstack"><span> Techstack </span> AWS Kendra, S3 bucket </p>
+          <p class="library"><span> Description </span> Built a search engine which is an important feature i.e. required by almost all medium & large enterprises as search helps filter relevant & required information in the world of big data</p>
+          <div class="options">
+            <a class="viewElem" href="" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------------------
+        Certificates SECTION
+    ------------------------->
+    <section class="section main project-section" id="certificates" tabindex="24">
+      <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+        data-aos-duration="700" data-aos-once="true">
+        <div class="section-header">
+          <h1 class="title">Certificates</h1>
+        </div>
+        <div class="project card-container">
+  
+          <div class="project cert 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/CLF-C01.png" alt="Project image">
+            </div>
+            <br>
+            <h6>AWS Certified Cloud Practitioner</h6>
+            <p class="techstack">Score: 838</p>
+            <div class="options">
+              <a class="viewElem" href="https://www.credly.com/badges/67516387-3fb5-42db-a54a-b19905eb49fa" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            </div>
+          </div>
+          
+          <div class="project cert 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/AZ-900.png" alt="Project image">
+            </div>
+            <br>
+            <h6>Microsoft Certified: Azure Fundamentals</h6>
+            <p class="techstack">Score: 955</p>
+            <div class="options">
+              <a class="viewElem" href="https://www.credly.com/badges/1fc80fc8-6c60-4571-8d50-df09bfa4cf15/linked_in_profile" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            </div>
+          </div>
+  
+          <div class="project cert 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/DP-900.png" alt="Project image">
+            </div>
+            <br>
+            <h6>Microsoft Certified: Azure Data Fundamentals</h6>
+            <p class="techstack">Score: 783</p>
+            <div class="options">
+              <a class="viewElem" href="https://www.credly.com/badges/07e9f780-7a64-4fc9-aa8a-1c791b7ee219" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="project cert 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/hackcbs.png" alt="Project image">
+            </div>
+            <br>
+            <h6>hackCBS 5.0 -India's Largest Student-run Hackathon</h6>
+          </div>
+
+          <div class="project cert 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/CSI-SRM.png" alt="Project image">
+            </div>
+            <br>
+            <h6>Certificate of Appreciation</h6>
+            <p class="techstack">Core team member- CSI</p>
+            <div class="options">
+              <a class="viewElem" href="https://certificate.givemycertificate.com/c/e5dd30a4-5363-46f6-ad53-2096b9232d64" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="project cert 1" tabindex="">
+            <div class="imgDiv">
+              <img src="./assets/aws-academy.png" alt="Project image">
+            </div>
+            <br>
+            <h6>AWS Academy Graduate - AWS Academy Cloud Foundations</h6>
+            <p class="techstack">Score: 1000</p>
+            <div class="options">
+              <a class="viewElem" href="https://www.credly.com/badges/59fe5608-d297-4d9b-9db1-4efedbbfb6d1?source=linked_in_profile" target="_blank"><ion-icon name="open-outline"></ion-icon></a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+
+  <!-----------------------
+        EDUCATION SECTIONS
+    ------------------------->
+
+  <section class="section education-section" id="education" tabindex="23">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">Education</h1>
+      <div class="card-container">
+        
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+          <h6 class="courseName">B.Tech in CSE with specialization in Cloud Computing</h6>
+          <p class="instituteName">SRM Institute of Science and Technology</p>
+          <p class="instituteDesc">CGPA: 9.18</p><br>
+          <p class="status Pursuing">Ongoing 2020-2024</p>
+        </div>
+
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+          <h6 class="courseName">12th (Science)</h6>
+          <p class="instituteName">Guru Har Rai Academy</p>
+          <p class="instituteDesc">Percentage: 83%</p><br>
+          <p class="status Completed">Completed 2020</p>
+        </div>
+
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image">
+          </div><br>
+          <h6 class="courseName">10 (ICSE)</h6>
+          <p class="instituteName">Guru Har Rai Academy</p>
+          <p class="instituteDesc">Percentage: 76.66%</p><br>
+          <p class="status Completed">Completed 2018</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------
+        EXPERIENCE SECTION
+    ------------------------->
+  <!-- <section class="section experience-section" id="experience" tabindex="24">
+    <div style="width:100%;align-items:center;display:flex;flex-direction:column" data-aos="zoom-in-up"
+      data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">Experience<p>These are the compaines where I've previously worked.</p>
+      </h1>
+      <div class="expContainer">
+        <ul class="listOfExp">
+          <li class="companyName active" tabindex="${tabindex}">Company name</li>
+        </ul>
+        <div class="expDesc">
+          <h4 class="expTitle">Job title</h4>
+          <p class="period">From (Month) - to (Month) Year</p><br>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio autem nihil porro consectetur
+            tempore similique laudantium aliquid labore quibusdam quam vel aperiam eligendi, esse illum est pariatur.
+            Dignissimos saepe inventore, nisi consequatur doloribus id obcaecati autem a quo? Corporis voluptatum
+            doloremque quisquam dicta eveniet rerum maiores cum aut, accusantium veniam.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-----------------------
+        FOOTER SECTION
+  ------------------------->
+
+  <footer class="footer" tabindex="35">
+    <div class="getInTouch">
+      <h3>Start a project?</h3>
+      <p>Interested in working together? We should queue up a time to chat.</p><a class="getInTouchBtn button"
+        target="_blank" href="https://www.linkedin.com/in/satyam-arya-101764205/" tabindex="36">Get in touch</a>
+    </div>
+    <div class="footerParent">
+
+      <div class="profInfo">
+        <div class="imgDiv">
+          <img src="./assets/me.png" alt="Profile Image">
+        </div>
+
+        <p>Satyam Arya<br>Mail me at <a href="https://www.gmail.com" tabindex="37">satyam19arya@gmail.com</a>
+        </p>
+      </div>
+      <div class="reachMeOut">
+        <h3>Reach me out on</h3>
+        <ul class="social-menu">
+          <li><a href="https://www.linkedin.com/in/satyam-arya-101764205/" target="_blank" class="linkedin" tabindex="38" aria-label="linkedin"><i
+                class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://github.com/satyam19arya" target="_blank" aria-label="github" class="github" tabindex="39"><i
+                class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/satyam19arya/" target="_blank" aria-label="instagram" class="instagram" tabindex="40"><i
+                class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/SatyamA93109394" target="_blank" aria-label="twitter" class="twitter" tabindex="41"><i
+                class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="developerInfo">Copyright © 2023 
+      <a href="https://www.linkedin.com/in/satyam-arya-101764205/" tabindex="50">Satyam Arya</a> | All rights reserved
+    </p>
+  </footer>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+
+  <!-- External scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init()</script>
+</body>
+
+</html>
