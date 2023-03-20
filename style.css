@@ -588,8 +588,7 @@ a {
   transition: all 0.5s;
 }
 .project-section .card-container .card {
-  height: 35rem;
-  background-image: linear-gradient(to top, #000, #121112, #1c1c1f, #25282b, #2d3436);
+  height: 40rem;
   background-repeat: no-repeat;
   background-size: 100% 50%;
 }
