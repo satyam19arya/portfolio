@@ -1057,6 +1057,11 @@ a {
   .home-section div p {
     width: 100%;
   }
+
+  .home-section h1 span{
+    text-align: center;
+  }
+
   .about-section {
     flex-direction: column;
     text-align: center;
@@ -1279,9 +1284,15 @@ a {
     gap: 0;
     line-height: 5rem;
   }
+
+  .home-section .imgDiv{
+    margin: 0 auto;
+  }
+
   .footer .imgDiv {
     margin: auto;
   }
+  
   .card-container .card {
     width: 90vw;
   }
